@@ -1,10 +1,14 @@
 import Dashboard from "./components/Dashboard";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
-    <div className='w-[90%] lg:w-[80%] mx-auto'>
-      <Dashboard />
-    </div>
+    <>
+      <Navbar />
+      <div className='w-[96%] lg:w-[90%] mx-auto mt-5'>
+        <Dashboard />
+      </div>
+    </>
   );
 };
 
