@@ -1,12 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Greeting from "./Greeting";
 
 const FilterBar = ({ applyFilters }) => {
   const [type, setType] = useState("");
   const [status, setStatus] = useState("");
 
-  const handleFilter = () => {
+  useEffect(() => {
     applyFilters(type, status);
-  };
+  }, [type, status]);
 
   return (
     <div className='bg-white rounded-lg shadow-md p-4 mb-4 flex flex-wrap items-center gap-4'>
@@ -29,12 +30,8 @@ const FilterBar = ({ applyFilters }) => {
         <option value='Available'>Available</option>
         <option value='Rented'>Rented</option>
       </select>
-      <button
-        onClick={handleFilter}
-        className='bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50'
-      >
-        Search
-      </button>
+
+      <Greeting />
     </div>
   );
 };

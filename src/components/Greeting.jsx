@@ -12,8 +12,10 @@ const Greeting = () => {
   };
 
   return (
-    <div>
-      <h1 className='text-2xl font-bold'>{getGreetingMessage()}</h1>
+    <div className='ml-auto'>
+      <h1 className='text-2xl font-semibold text-purple-500'>
+        {getGreetingMessage()}
+      </h1>
     </div>
   );
 };

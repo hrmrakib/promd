@@ -10,7 +10,8 @@ const Navbar = () => {
           <div className='flex items-center'>
             {/* Logo */}
             <div className='flex-shrink-0 flex items-center'>
-              <img className='h-8 w-auto' src='/logo.svg' alt='Logo' />
+              PMD
+              {/* <img className='h-8 w-auto' src='/logo.svg' alt='Logo' /> */}
             </div>
           </div>
 

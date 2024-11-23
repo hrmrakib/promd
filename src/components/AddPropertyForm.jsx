@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useEffect, useState } from "react";
 
-export default function AddPropertyForm({ addProperty }) {
+const AddPropertyForm = ({ addProperty }) => {
   const [property, setProperty] = useState({
     name: "",
     type: "Apartment",
@@ -109,4 +109,5 @@ export default function AddPropertyForm({ addProperty }) {
       </button>
     </form>
   );
-}
+};
+export default AddPropertyForm;

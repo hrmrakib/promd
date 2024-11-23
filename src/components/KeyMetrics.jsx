@@ -1,8 +1,10 @@
 const KeyMetrics = ({ properties }) => {
   const totalProperties = properties.length;
+
   const availableProperties = properties.filter(
     (p) => p.status === "Available"
   ).length;
+
   const rentedProperties = properties.filter(
     (p) => p.status === "Rented"
   ).length;
