@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import Greeting from "./Greeting";
+import Greeting from "./other/Greeting";
+import Time from "./other/Time";
 
 const FilterBar = ({ applyFilters }) => {
   const [type, setType] = useState("");
@@ -10,7 +11,7 @@ const FilterBar = ({ applyFilters }) => {
   }, [type, status]);
 
   return (
-    <div className='bg-white rounded-lg shadow-md p-4 mb-4 flex flex-wrap items-center gap-4'>
+    <div className='relative bg-white rounded-lg shadow-md p-4 mb-4 flex flex-wrap items-center gap-4'>
       <select
         value={type}
         onChange={(e) => setType(e.target.value)}
@@ -32,6 +33,7 @@ const FilterBar = ({ applyFilters }) => {
       </select>
 
       <Greeting />
+      <Time />
     </div>
   );
 };
