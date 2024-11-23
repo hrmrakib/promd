@@ -1,11 +1,12 @@
 import { useState } from "react";
+import Container from "../container/Container";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <nav className='bg-white'>
-      <div className='max-w- mx-auto px-4 sm:px-6 lg:px-8'>
+      <Container className='px-4 lg:px-6'>
         <div className='flex justify-between h-16'>
           <div className='flex items-center'>
             {/* Logo */}
@@ -155,7 +156,7 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-      </div>
+      </Container>
 
       {/* Mobile menu */}
       <div className={`${isMobileMenuOpen ? "block" : "hidden"} sm:hidden`}>

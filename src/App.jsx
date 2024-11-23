@@ -1,14 +1,15 @@
 import Dashboard from "./components/Dashboard";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import Container from "./container/Container";
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <div className='w-[96%] lg:w-[90%] mx-auto mt-5'>
+      <Container className='mt-5'>
         <Dashboard />
-      </div>
+      </Container>
       <Footer />
     </>
   );
