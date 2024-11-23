@@ -10,10 +10,10 @@ const Navbar = () => {
         <div className='flex justify-between h-16'>
           <div className='flex items-center'>
             {/* Logo */}
-            <div className='flex-shrink-0 flex items-center'>
-              PMD
-              {/* <img className='h-8 w-auto' src='/logo.svg' alt='Logo' /> */}
-            </div>
+            <a href='#' className='flex-shrink-0 flex items-center'>
+              <img className='h-8 w-auto' src='/logo.png' alt='Logo' />{" "}
+              <span className='font-bold ml-3'>Topsy</span>
+            </a>
           </div>
 
           {/* Desktop menu */}

@@ -6,7 +6,7 @@ const Footer = () => {
       <Container className='px-4 py-6'>
         <div className='flex flex-wrap justify-between items-center'>
           <div className='w-full md:w-1/3 mb-4 md:mb-0'>
-            <h3 className='text-lg font-semibold mb-2'>PropManager</h3>
+            <h3 className='text-lg font-semibold mb-2'>Topsy</h3>
             <p className='text-sm'>Simplifying property management for you.</p>
           </div>
           <div className='w-full md:w-1/3 mb-4 md:mb-0'>
@@ -35,7 +35,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className='w-full md:w-1/3 text-sm'>
-            <p>&copy; 2023 PropManager. All rights reserved.</p>
+            <p>&copy; 2024 Topsy. All rights reserved.</p>
           </div>
         </div>
       </Container>
