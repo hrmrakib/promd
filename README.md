@@ -1,4 +1,4 @@
-## [Live Preview](https://property-management-dashboard.vercel.app/)
+## [Live Preview](https://promd.vercel.app/)
 
 
 ## <a name="quick-start">🤸 Quick Start</a>
@@ -16,8 +16,8 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/hrmrakib/property-management-dashboard.git
-cd property-management-dashboard
+git clone https://github.com/hrmrakib/promd.git
+cd promd
 ```
 
 **Installation**
