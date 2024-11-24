@@ -12,7 +12,7 @@ const Greeting = () => {
   };
 
   return (
-    <div className='ml-auto'>
+    <div className='hidden lg:inline-block ml-auto'>
       <h1 className='text-2xl font-semibold text-purple-500'>
         {getGreetingMessage()}
       </h1>
