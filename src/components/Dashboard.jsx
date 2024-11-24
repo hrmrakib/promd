@@ -8,8 +8,6 @@ import { initialProperties } from "../constants";
 const Dashboard = () => {
   const [properties, setProperties] = useState([]);
   const [filteredProperties, setFilteredProperties] = useState([]);
-  const [filterType, setFilterType] = useState("");
-  const [filterStatus, setFilterStatus] = useState("");
 
   useEffect(() => {
     // set property data on localStorage
@@ -25,6 +23,7 @@ const Dashboard = () => {
     }
   }, []);
 
+  // add new property and get new property from AddPropertyForm
   const addProperty = (newProperty) => {
     const propertyWithId = { ...newProperty, id: properties.length + 1 };
     setProperties([...properties, propertyWithId]);
@@ -36,9 +35,8 @@ const Dashboard = () => {
     localStorage.setItem("properties", JSON.stringify(updatedProperties));
   };
 
+  // filter properties based on type and status
   const applyFilters = (type, status) => {
-    setFilterType(type);
-    setFilterStatus(status);
     let filtered = properties;
     if (type) {
       filtered = filtered.filter((property) => property.type === type);

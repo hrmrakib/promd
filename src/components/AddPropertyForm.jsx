@@ -15,6 +15,7 @@ const AddPropertyForm = ({ addProperty }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // send to the Dashboard component
     addProperty(property);
     // reset form
     setProperty({
