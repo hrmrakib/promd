@@ -2,7 +2,7 @@ import Container from "../container/Container";
 
 const Footer = () => {
   return (
-    <footer className='bg-gray-100 text-black mt-8'>
+    <footer className='bg-gray-100 dark:bg-gray-900 text-black dark:text-gray-200 mt-8'>
       <Container className='px-4 py-6'>
         <div className='flex flex-wrap justify-between items-center gap-5'>
           <div className=''>

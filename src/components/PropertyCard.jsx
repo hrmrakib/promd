@@ -1,8 +1,12 @@
 const PropertyCard = ({ property }) => {
   return (
-    <div className='bg-white rounded-lg shadow-md p-4'>
-      <h3 className='text-xl font-semibold mb-2'>{property.name}</h3>
-      <p className='text-gray-600 mb-2'>{property.address}</p>
+    <div className='bg-white dark:bg-gray-800 rounded-lg shadow-md p-4'>
+      <h3 className='text-xl dark:text-gray-200 font-semibold mb-2'>
+        {property.name}
+      </h3>
+      <p className='text-gray-600 dark:text-gray-200 mb-2'>
+        {property.address}
+      </p>
       <div className='flex justify-between items-center'>
         <span
           className={`px-2 py-1 rounded-full text-sm ${

@@ -11,11 +11,11 @@ const FilterBar = ({ applyFilters }) => {
   }, [type, status]);
 
   return (
-    <div className='relative bg-white rounded-lg shadow-md p-4 mb-4 flex flex-wrap items-center gap-4'>
+    <div className='relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 mb-4 flex flex-wrap items-center gap-4'>
       <select
         value={type}
         onChange={(e) => setType(e.target.value)}
-        className='rounded-md p-1 border border-gray-500 shadow-sm'
+        className='rounded-md p-1 border dark:bg-gray-800 dark:text-gray-200 border-gray-500 shadow-sm'
       >
         <option value=''>All Types</option>
         <option value='Apartment'>Apartment</option>
@@ -25,7 +25,7 @@ const FilterBar = ({ applyFilters }) => {
       <select
         value={status}
         onChange={(e) => setStatus(e.target.value)}
-        className='rounded-md p-1 border border-gray-500 shadow-sm'
+        className='rounded-md p-1 border dark:bg-gray-800 dark:text-gray-200 border-gray-500 shadow-sm'
       >
         <option value=''>All Statuses</option>
         <option value='Available'>Available</option>

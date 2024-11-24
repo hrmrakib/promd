@@ -92,8 +92,8 @@ export const currentStats = [
   },
   {
     id: 4,
-    title: "Review",
+    title: "Review  ⭐⭐⭐⭐⭐",
     img: "/review.png",
-    number: 459,
+    number: 4.9,
   },
 ];

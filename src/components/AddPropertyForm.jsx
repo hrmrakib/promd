@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const AddPropertyForm = ({ addProperty }) => {
   const [property, setProperty] = useState({
@@ -16,6 +16,7 @@ const AddPropertyForm = ({ addProperty }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     addProperty(property);
+    // reset form
     setProperty({
       name: "",
       type: "Apartment",
@@ -27,13 +28,15 @@ const AddPropertyForm = ({ addProperty }) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className='bg-white rounded-lg shadow-md p-4 mt-4'
+      className='bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 mt-4'
     >
-      <h2 className='text-xl font-semibold mb-4'>Add New Property</h2>
+      <h2 className='text-xl dark:text-gray-200 font-semibold mb-4'>
+        Add New Property
+      </h2>
       <div className='mb-4'>
         <label
           htmlFor='name'
-          className='block text-sm font-medium text-gray-700'
+          className='block text-sm font-medium text-gray-700 dark:text-gray-200'
         >
           Name
         </label>
@@ -44,13 +47,13 @@ const AddPropertyForm = ({ addProperty }) => {
           value={property.name}
           onChange={handleChange}
           required
-          className='mt-1 block w-full rounded-md border border-gray-500 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50'
+          className='mt-1 block w-full p-1 dark:bg-gray-800 dark:text-gray-200 rounded-md border border-gray-500 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50'
         />
       </div>
       <div className='mb-4'>
         <label
           htmlFor='type'
-          className='block text-sm font-medium text-gray-700'
+          className='block text-sm font-medium text-gray-700 dark:text-gray-200'
         >
           Type
         </label>
@@ -59,7 +62,7 @@ const AddPropertyForm = ({ addProperty }) => {
           name='type'
           value={property.type}
           onChange={handleChange}
-          className='mt-1 block w-full rounded-md border border-gray-500 shadow-sm'
+          className='mt-1 block w-full p-1 dark:bg-gray-800 dark:text-gray-200 rounded-md border border-gray-500 shadow-sm'
         >
           <option value='Apartment'>Apartment</option>
           <option value='House'>House</option>
@@ -69,7 +72,7 @@ const AddPropertyForm = ({ addProperty }) => {
       <div className='mb-4'>
         <label
           htmlFor='status'
-          className='block text-sm font-medium text-gray-700'
+          className='block text-sm font-medium text-gray-700 dark:text-gray-200'
         >
           Status
         </label>
@@ -78,7 +81,7 @@ const AddPropertyForm = ({ addProperty }) => {
           name='status'
           value={property.status}
           onChange={handleChange}
-          className='mt-1 block w-full rounded-md border border-gray-500 shadow-sm'
+          className='mt-1 block w-full p-1 dark:bg-gray-800 dark:text-gray-200 rounded-md border border-gray-500 shadow-sm'
         >
           <option value='Available'>Available</option>
           <option value='Rented'>Rented</option>
@@ -87,7 +90,7 @@ const AddPropertyForm = ({ addProperty }) => {
       <div className='mb-4'>
         <label
           htmlFor='address'
-          className='block text-sm font-medium text-gray-700'
+          className='block text-sm font-medium text-gray-700 dark:text-gray-200'
         >
           Address
         </label>
@@ -98,7 +101,7 @@ const AddPropertyForm = ({ addProperty }) => {
           value={property.address}
           onChange={handleChange}
           required
-          className='mt-1 block w-full rounded-md border border-gray-500 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50'
+          className='mt-1 block w-full p-1 dark:bg-gray-800 dark:text-gray-200 rounded-md border border-gray-500 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50'
         />
       </div>
       <button
