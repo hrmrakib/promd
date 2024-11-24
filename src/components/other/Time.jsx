@@ -29,7 +29,7 @@ const Time = () => {
   }, []);
 
   return (
-    <div className='absolute top-0 right-5'>
+    <div className='absolute top-0 right-5 hidden lg:inline-block'>
       <p className='text-sm text-gray-700 font-medium'>{time}</p>
     </div>
   );

@@ -70,3 +70,30 @@ export const initialProperties = [
     address: "160 Riverbank Rd",
   },
 ];
+
+export const currentStats = [
+  {
+    id: 1,
+    title: "Check-ins",
+    img: "/checkin.png",
+    number: 11,
+  },
+  {
+    id: 2,
+    title: "Check-out",
+    img: "/checkout.png",
+    number: 6,
+  },
+  {
+    id: 3,
+    title: "Earning",
+    img: "/earning.png",
+    number: "₹ 1,24,000",
+  },
+  {
+    id: 4,
+    title: "Review",
+    img: "/review.png",
+    number: 459,
+  },
+];

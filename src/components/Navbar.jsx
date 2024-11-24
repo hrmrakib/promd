@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <nav className='bg-white'>
-      <Container className='px-4 lg:px-6'>
+      <Container>
         <div className='flex justify-between h-16'>
           <div className='flex items-center'>
             {/* Logo */}
